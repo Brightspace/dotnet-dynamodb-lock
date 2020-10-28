@@ -33,7 +33,7 @@ jobs:
             run: dotnet pack --configuration Release --no-build
 
           - name: Copy *.nuget to dist/
-            run: mkdir dist/ && cp src/DotnetCIVersionProperties/bin/Release/*.nupkg dist/
+            run: mkdir dist/ && cp src/DotnetDynamoDBLock/bin/Release/*.nupkg dist/
 
           - name: Archive dist/
             uses: actions/upload-artifact@v1
