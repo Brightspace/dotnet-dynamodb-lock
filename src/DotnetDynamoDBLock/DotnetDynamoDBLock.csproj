@@ -4,6 +4,7 @@
 		<IsPackable>true</IsPackable>
 		<OutputType>Exe</OutputType>
 		<PackAsTool>true</PackAsTool>
+		<PackageId>dotnet-dynamodb-lock</PackageId>
 		<ToolCommandName>dynamodb-lock</ToolCommandName>
 	</PropertyGroup>
 	<ItemGroup>
