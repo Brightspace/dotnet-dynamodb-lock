@@ -77,6 +77,7 @@ namespace DotnetDynamoDBLock {
 		private static void WriteUsage( IndentedTextWriter writer ) {
 
 			writer.WriteLine( "Usage:" );
+			writer.WriteLine();
 			writer.Indent++;
 			{
 				AcquireCommand.WriteUsage( writer );
@@ -85,30 +86,7 @@ namespace DotnetDynamoDBLock {
 			writer.Indent--;
 			writer.WriteLine();
 
-			writer.WriteLine( "Config:" );
-			writer.Indent++;
-			{
-				writer.WriteLine( "{" );
-				writer.Indent++;
-				{
-					writer.WriteLine( "/* Required configs */" );
-					writer.WriteLine( "\"tableTable\": \"locks\"," );
-					writer.WriteLine( "\"lockKey\": \"build\"," );
-					writer.WriteLine();
-
-					writer.WriteLine( "/* Optional configs */" );
-					writer.WriteLine( "\"lockDuration\":300," );
-					writer.WriteLine( "\"retryAfter\":300," );
-					writer.WriteLine();
-
-					writer.WriteLine( "/* Optional AWS configs */" );
-					writer.WriteLine( "\"awsRegion\": \"us-east-1\"," );
-					writer.WriteLine( "\"roleArn\": \"arn:aws:iam::111111111111:role/build\"" );
-				}
-				writer.Indent--;
-				writer.WriteLine( "}" );
-			}
-			writer.Indent--;
+			LockConfig.WriteUsage( writer );
 		}
 
 	}

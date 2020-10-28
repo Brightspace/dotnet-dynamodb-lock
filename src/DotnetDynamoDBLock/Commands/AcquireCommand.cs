@@ -64,7 +64,7 @@ namespace DotnetDynamoDBLock.Commands {
 					label: label
 				);
 
-			using( CancellationTokenSource timeout = new CancellationTokenSource( TimeSpan.FromMinutes( 5 ) ) ) {
+			using( CancellationTokenSource timeout = new CancellationTokenSource( config.AcquireTimeout ) ) {
 				try {
 
 					using( CancellationTokenSource cancelAndTimeout = CancellationTokenSource.CreateLinkedTokenSource(
