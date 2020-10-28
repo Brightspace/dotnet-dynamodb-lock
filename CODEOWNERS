@@ -1,0 +1,4 @@
+# The last rule to match takes precedence
+# docs: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
+
+* @JeffAshton
