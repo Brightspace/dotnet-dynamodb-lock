@@ -48,16 +48,31 @@ Lock released.
 	}
 ```
 
-`tableName:` The DynamoDB table name **\[required\]**
+- **tableName**: The DynamoDB table name `[required]`
 
-`lockKey:` The unique key for the lock **\[required\]**
+- **lockKey**: The unique key for the lock `[required]`
 
-`awsRegion`: The aws region of the table *\[optional\]*
+- **awsRegion**: The aws region of the table `[optional]`
 
-`roleArn`: The arn of the role to assume *\[optional\]*
+- **roleArn**: The arn of the role to assume `[optional]`
 
-`acquireTimeout`: How long to wait to acquire the lock before timing out *\[optional\]*
+- **acquireTimeout**: How long to wait to acquire the lock before timing out `[optional]`
 
-`lockDuration`: How long the lock is valid for *\[optional\]*
+- **lockDuration**: How long the lock is valid for `[optional]`
 
-`retryAfter`: How long to wait inbetween retries to acquire the lock *\[optional\]*
+- **retryAfter**: How long to wait inbetween retries to acquire the lock `[optional]`
+
+
+### Schena
+
+- **Simple Primary Key**:
+
+	```
+	key : string
+	```
+
+- **Time To Live**:
+
+	```
+	expires : numeric
+	```
