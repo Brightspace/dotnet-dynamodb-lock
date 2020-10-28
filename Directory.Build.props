@@ -15,7 +15,9 @@
 		<Authors>Jeff Ashton</Authors>
 		<Company>D2L Corporation</Company>
 		<Copyright>Copyright © 2020</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/Brightspace/dotnet-dynamodb-lock</PackageProjectUrl>
+		<PackageTags>dotnet;dynamodb;lock</PackageTags>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/Brightspace/dotnet-dynamodb-lock</RepositoryUrl>
 	</PropertyGroup>
