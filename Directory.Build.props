@@ -1,0 +1,23 @@
+<Project>
+	<Import Project="VersionInfo.props" />
+
+	<PropertyGroup>
+		<Deterministic>true</Deterministic>
+		<IncludeSymbols>true</IncludeSymbols>
+		<IsPackable>false</IsPackable>
+		<LangVersion>8.0</LangVersion>
+		<Nullable>true</Nullable>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>Jeff Ashton</Authors>
+		<Company>D2L Corporation</Company>
+		<Copyright>Copyright © 2020</Copyright>
+		<PackageProjectUrl>https://github.com/Brightspace/dotnet-dynamodb-lock</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/Brightspace/dotnet-dynamodb-lock</RepositoryUrl>
+	</PropertyGroup>
+
+</Project>
