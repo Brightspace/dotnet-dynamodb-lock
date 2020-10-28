@@ -35,17 +35,17 @@ Lock released.
 ### Config
 
 ```
-	{
-		"tableName": "locks",
-		"lockKey": "build",
+{
+	"tableName": "locks",
+	"lockKey": "build",
 
-		"awsRegion": "us-east-1",
-		"roleArn": "arn:aws:iam::111111111111:role/build"
+	"awsRegion": "us-east-1",
+	"roleArn": "arn:aws:iam::111111111111:role/build"
 
-		"acquireTimeout":300,
-		"lockDuration":1800,
-		"retryAfter":5,
-	}
+	"acquireTimeout":300,
+	"lockDuration":1800,
+	"retryAfter":5
+}
 ```
 
 - **tableName**: The DynamoDB table name `[required]`
