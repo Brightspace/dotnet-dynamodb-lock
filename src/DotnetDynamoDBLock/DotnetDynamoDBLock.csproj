@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Description>Dotnet tool for acquiring/releasing locks in a DynamoDB table.</Description>
+		<IsPackable>true</IsPackable>
+		<OutputType>Exe</OutputType>
+		<PackAsTool>true</PackAsTool>
+		<ToolCommandName>dynamodb-lock</ToolCommandName>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="AWSSDK.DynamoDBv2" Version="3.5.1.9" />
+		<PackageReference Include="AWSSDK.SecurityToken" Version="3.5.1.13" />
+	</ItemGroup>
+</Project>
