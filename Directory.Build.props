@@ -6,7 +6,7 @@
 		<IncludeSymbols>true</IncludeSymbols>
 		<IsPackable>false</IsPackable>
 		<LangVersion>8.0</LangVersion>
-		<Nullable>enabled</Nullable>
+		<Nullable>enable</Nullable>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 	</PropertyGroup>
