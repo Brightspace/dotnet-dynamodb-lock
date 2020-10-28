@@ -31,3 +31,12 @@ jobs:
 
           - name: dotnet pack
             run: dotnet pack --configuration Release --no-build
+
+          - name: Copy *.nuget to dist/
+            run: mkdir dist/ && cp src/DotnetCIVersionProperties/bin/Release/*.nupkg dist/
+
+          - name: Archive dist/
+            uses: actions/upload-artifact@v1
+            with:
+                name: dist
+                path: dist/
