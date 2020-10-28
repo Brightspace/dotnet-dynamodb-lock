@@ -63,7 +63,7 @@ Lock released.
 - **retryAfter**: How long to wait inbetween retries to acquire the lock `[optional]`
 
 
-### Schena
+## Schena
 
 - **Simple Primary Key**:
 
@@ -76,3 +76,9 @@ Lock released.
 	```
 	expires : numeric
 	```
+
+## Permissions
+
+- dynamodb:PutItem
+- dynamodb:GetItem
+- dynamodb:DeleteItem
