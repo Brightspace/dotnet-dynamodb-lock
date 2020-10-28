@@ -19,7 +19,7 @@ namespace DotnetDynamoDBLock.Locks {
 				credentials = new AssumeRoleAWSCredentials(
 						sourceCredentials,
 						roleArn: config.RoleArn,
-						roleSessionName: $"DotnetDynamoDBLock/{ config.LockKey }"
+						roleSessionName: $"dotnet-dynamodb-lock"
 					);
 
 			} else {
