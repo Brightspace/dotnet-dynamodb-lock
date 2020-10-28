@@ -40,7 +40,7 @@ Lock released.
 	"lockKey": "build",
 
 	"awsRegion": "us-east-1",
-	"roleArn": "arn:aws:iam::111111111111:role/build"
+	"roleArn": "arn:aws:iam::111111111111:role/build",
 
 	"acquireTimeout":300,
 	"lockDuration":1800,
