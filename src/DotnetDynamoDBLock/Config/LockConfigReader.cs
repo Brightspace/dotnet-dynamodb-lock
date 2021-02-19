@@ -20,7 +20,7 @@ namespace DotnetDynamoDBLock.Config {
 					FileShare.Read
 				);
 
-			LockConfig config = await JsonSerializer
+			LockConfig? config = await JsonSerializer
 				.DeserializeAsync<LockConfig>(
 					fs,
 					new JsonSerializerOptions {
@@ -30,6 +30,10 @@ namespace DotnetDynamoDBLock.Config {
 					cancellationToken
 				)
 				.ConfigureAwait( continueOnCapturedContext: false );
+
+			if( config == null ) {
+				throw new ConfigException( "Config is required." );
+			}
 
 			if( string.IsNullOrEmpty( config.TableName ) ) {
 				throw new ConfigException( "'tableName' is a required config." );

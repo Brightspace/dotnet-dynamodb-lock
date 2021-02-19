@@ -21,7 +21,7 @@ namespace DotnetDynamoDBLock {
 
 			using( CancellationTokenSource cts = new CancellationTokenSource() ) {
 
-				Console.CancelKeyPress += ( object sender, ConsoleCancelEventArgs e ) => {
+				Console.CancelKeyPress += ( object? sender, ConsoleCancelEventArgs e ) => {
 					Console.WriteLine( "Stopping..." );
 					e.Cancel = true;
 					cts.Cancel();
