@@ -22,6 +22,11 @@ jobs:
             with:
                 dotnet-version: 5.0.x
 
+          - name: Setup .NET 8.0.x
+            uses:  Brightspace/third-party-actions@actions/setup-dotnet
+            with:
+                dotnet-version: 8.0.x
+
           - name: dotnet tool restore
             run: dotnet tool restore
 
