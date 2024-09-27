@@ -7,7 +7,7 @@
 		<IsPackable>false</IsPackable>
 		<LangVersion>8.0</LangVersion>
 		<Nullable>enable</Nullable>
-		<TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
+		<TargetFrameworks>net8.0;net5.0;netcoreapp3.1</TargetFrameworks>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 	</PropertyGroup>
 
