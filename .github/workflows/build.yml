@@ -46,7 +46,7 @@ jobs:
             run: mkdir dist/ && cp src/DotnetDynamoDBLock/bin/Release/*.nupkg dist/
 
           - name: Archive dist/
-            uses: actions/upload-artifact@v1
+            uses: Brightspace/third-party-actions@actions/upload-artifact
             with:
                 name: dist
                 path: dist/
